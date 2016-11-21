@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <com.celebritysupermarket.view.NoScrollViewPager
+        android:id="@+id/homeViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.celebritysupermarket.view.NoScrollViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/home"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/home_press"
+            android:text="首页"
+            android:textColor="#000"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/MyLive"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/live"
+            android:text="我要直播"
+            android:textColor="#000"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/ShoppingCart"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/shoppingcart"
+            android:text="购物车"
+            android:textColor="#000"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/user"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/user"
+            android:text="我的"
+            android:textColor="#000"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
